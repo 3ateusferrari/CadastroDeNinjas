@@ -21,7 +21,6 @@ public class MissoesModel {
     private String dificuldade;
 
     @OneToMany(mappedBy = "missoes")
-    @JoinColumn(name="missoes_id")
     private List<NinjaModel> ninjas;
 
 }

@@ -23,6 +23,8 @@ public class NinjaModel {
     private String email;
     private int idade;
 
+    private String imgUrl;
+
     @ManyToOne
     @JoinColumn(name = "missoes_id")
     private MissoesModel missoes;
