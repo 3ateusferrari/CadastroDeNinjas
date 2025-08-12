@@ -30,9 +30,9 @@ public class NinjaService {
 
     //Criar um novo ninja
     public NinjaDTO criarNinja(NinjaDTO ninjaDTO){
-        NinjaModel ninjaModel = new NinjaMapper.map(ninjaDTO);
-        ninjaModel = ninjaRepository.save(ninjaModel);
-        return ninjaModel;
+        NinjaModel ninja = ninjaMapper.map(ninjaDTO);
+        ninja = ninjaRepository.save(ninja);
+        return ninjaMapper.map(ninja);
     }
 
     //Deletar um ninja
